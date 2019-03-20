@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_branch"
+            android:icon="@drawable/branchicon2"
+            android:title="Branch" />
+
+        <item
+            android:id="@+id/nav_aboutcollege"
+            android:icon="@drawable/aboutcollegeicon"
+            android:title="About College" />
+
+    </group>
+
+    <item android:title="EVENTS">
+        <menu>
+            <item
+                android:id="@+id/nav_collegeevent"
+                android:icon="@drawable/eventicon"
+                android:title="College Event" />
+            <item
+                android:id="@+id/nav_workshop"
+                android:icon="@drawable/workshopicon"
+                android:title="Workshop" />
+            <item
+                android:id="@+id/nav_clubevent"
+                android:icon="@drawable/eventicon2"
+                android:title="Club Event" />
+        </menu>
+    </item>
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Setting" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

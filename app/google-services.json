@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "73452493744",
+    "firebase_url": "https://cmrcetapp.firebaseio.com",
+    "project_id": "cmrcetapp",
+    "storage_bucket": "cmrcetapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:73452493744:android:b0457634da004956",
+        "android_client_info": {
+          "package_name": "com.example.androide.cmrcet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "73452493744-m44tckmossljr0571h7h5fhglrfp3fdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKXT-OWGbII1lCsbvZwQkes_H_dbjr41Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

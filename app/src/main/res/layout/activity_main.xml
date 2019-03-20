@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_dark_default"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginTop="260dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="signin"
+        android:text="SIGN IN FOR STUDENTS"
+        android:textColor="#64DD17"
+
+        app:layout_constraintBottom_toTopOf="@+id/buttonsignup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="173dp"
+        android:layout_height="248dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cmrcet"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/buttonsignup"
+        android:layout_width="0dp"
+        android:layout_height="40sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="signup"
+        android:text="SIGN UP FOR STUDENTS"
+        android:textColor="#64DD17"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="260dp"
+        android:textAlignment="center"
+        android:textColor="#64DD17"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="160dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded"
+        android:onClick="people"
+        android:text="GUEST LOGIN"
+        android:textColor="#64DD17"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

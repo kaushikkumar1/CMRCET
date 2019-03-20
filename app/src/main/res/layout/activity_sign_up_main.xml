@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".SignUpMainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="7sp"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FULL NAME"
+            android:textColorHint="@color/colorPrimary"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="7sp"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EMAIL"
+            android:textColorHint="@color/colorPrimary"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="7sp"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PHONE NUMBER"
+            android:textColorHint="@color/colorPrimary"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="7sp"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/collegeid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="COLLAGE ID"
+            android:textColorHint="@color/colorPrimary"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="7sp"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:textColorHint="@color/colorPrimary"
+            />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="7sp"
+        android:textColorHint="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/reenterpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="REENTER PASSWORD"
+            android:textColorHint="@color/colorPrimary"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+   <RadioGroup
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="7sp">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content">
+       <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Male"
+               android:layout_marginLeft="7dp"
+               android:textColor="@color/colorPrimary"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Female"
+               android:layout_marginLeft="7dp"
+
+               android:textColor="@color/colorPrimary"/>
+           <RadioButton
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Others"
+               android:layout_marginLeft="7dp"
+               android:textColor="@color/colorPrimary"/>
+       </LinearLayout>
+   </RadioGroup>
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7sp"
+        android:background="@drawable/button_rounded"
+        android:text="Button" />
+</LinearLayout>
