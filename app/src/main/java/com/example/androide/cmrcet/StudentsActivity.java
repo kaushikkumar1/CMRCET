@@ -30,7 +30,6 @@ public class StudentsActivity extends AppCompatActivity
         setContentView(R.layout.activity_students2);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -97,7 +96,7 @@ public class StudentsActivity extends AppCompatActivity
 
         }
         else if (id == R.id.nav_aboutcollege) {
-            Intent intent=new Intent(getApplicationContext(),UploadMainActivity.class);
+            Intent intent=new Intent(getApplicationContext(),About_College.class);
             startActivity(intent);
 
 
