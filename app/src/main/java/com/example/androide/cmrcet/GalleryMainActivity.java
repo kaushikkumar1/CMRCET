@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import android.webkit.WebView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,18 +15,27 @@ public class GalleryMainActivity extends AppCompatActivity {
 
     //the recyclerview
     RecyclerView recyclerView;
+    WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gallery_main);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+      //  recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 
+        webView=(WebView)findViewById(R.id.webview1);
+
+        webview.getSettings().setJavaScriptEnabled(true);
+        webView.addJavascriptInterface(new JsObject(), "injectedObject");
+        webView.loadData("", "text/html", null);
+        webView.loadUrl("javascript:alert(injectedObject.toString())");
+
+
         //initializing the productlist
-        productList = new ArrayList<>();
+    /*    productList = new ArrayList<>();
 
 
         //adding some items to our list
@@ -81,5 +92,6 @@ public class GalleryMainActivity extends AppCompatActivity {
 
         //setting adapter to recyclerview
         recyclerView.setAdapter(adapter);
-    }
-}
+
+    }*/
+}}
