@@ -8,10 +8,11 @@
     <Button
         android:id="@+id/button2"
         android:layout_width="0dp"
-        android:layout_height="48dp"
+        android:layout_height="40dp"
         android:layout_marginStart="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="96dp"
+        android:background="@drawable/button_rounded"
         android:onClick="goclick"
         android:text="SIGN IN"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +25,6 @@
         android:layout_width="0dp"
         android:layout_height="38dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="358dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:background="#FAFAFA"
@@ -37,9 +37,7 @@
         app:layout_constraintBottom_toTopOf="@+id/editTextpassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextpassword"
@@ -58,5 +56,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="1219dp"
+        android:layout_height="477dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/placementimage" />
 
 </android.support.constraint.ConstraintLayout>

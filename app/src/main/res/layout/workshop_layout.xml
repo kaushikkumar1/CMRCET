@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -22,19 +23,18 @@
                 android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:background="@drawable/round_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:src="@drawable/cmrcet"/>
+
                 <TextView
                     android:id="@+id/textviewaudience"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:textColor="#FF00FF3C"
+                    android:layout_width="305dp"
+                    android:layout_height="60dp"
+                    android:text="Audience : Students And Teachers"
                     android:textAlignment="center"
-                    android:textSize="16dp"
-                    android:text="Audience : Students And Teachers"/>
+                    android:textColor="#FF00FF3C"
+                    android:textSize="16dp" />
 
             </LinearLayout>
 
@@ -43,7 +43,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
-                android:background="@drawable/cmrcetimage3" />
+                android:background="@drawable/cmrcetimage3"
+                android:scaleType="fitXY" />
 
 
             <TextView
@@ -52,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_toRightOf="@id/imageView"
-                android:text="* UGC AUTONOMOUS * Approved by AICTE * Accredited by NAAC with 'A' Grade * All B.Tech programs Accredited by NBA *"
+                android:text=" Accredited by NAAC with 'A' Grade * All B.Tech programs Accredited by NBA *"
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#FF00FF3C"

@@ -21,7 +21,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_gravity="center"
-                android:background="@drawable/cmrcetimage1" />
+                android:background="@drawable/cmrcetimage1"
+                android:scaleType="fitXY" />
 
             <TextView
                 android:id="@+id/textViewTitle"
@@ -33,7 +34,7 @@
                 android:textAlignment="center"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="#FF00FF3C"
-                android:textSize="20dp" />
+                android:textSize="16dp" />
 
 
         </LinearLayout>
